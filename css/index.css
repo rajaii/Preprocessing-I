@@ -149,12 +149,13 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .container .head1 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
   }
 }
 .container .head1 h1 {
@@ -162,6 +163,12 @@ body {
   text-align: center;
   font-size: 2rem;
   color: darkred;
+}
+@media (max-width: 500px) {
+  .container .head1 h1 {
+    width: 100%;
+    background-color: blue;
+  }
 }
 .container .head1 nav {
   display: flex;
@@ -172,14 +179,26 @@ body {
   font-size: 1.5rem;
   color: grey;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .container .head1 nav {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
   }
 }
 .container .head1 nav a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container .head1 nav a {
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .container .intro {
   border-top: 1px solid blue;
@@ -206,38 +225,6 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 500px) {
-  .container .skillz {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }
-}
-.container .skillz h1 {
-  width: 483px;
-  text-align: center;
-  font-size: 2rem;
-  color: darkred;
-}
-.container .skillz nav {
-  display: flex;
-  justify-content: space-between;
-  width: 330px;
-  margin-right: 50px;
-  align-items: center;
-  font-size: 1.5rem;
-  color: grey;
-}
-@media screen and (max-width: 500px) {
-  .container .skillz nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.container .skillz nav a {
-  text-decoration: none;
-}
 .container .skillz .sklst {
   display: flex;
   flex-direction: column;
@@ -260,6 +247,11 @@ body {
   width: 609px;
   margin-right: 25px;
 }
+@media (max-width: 500px) {
+  .container .skillz img {
+    display: none;
+  }
+}
 .container .experience {
   border-top: 1px solid blue;
   color: darkred;
@@ -275,6 +267,13 @@ body {
 .container table {
   width: 100%;
   background-color: antiquewhite;
+}
+@media (max-width: 500px) {
+  .container table {
+    font-size: 1rem;
+    height: 100%;
+    width: auto;
+  }
 }
 .container table th {
   border: 1px solid black;
