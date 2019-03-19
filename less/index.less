@@ -49,11 +49,152 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@ftmain: 1.25rem;
+@fttitle: 2rem;
+@titcolor: darkred;
+@nvcolor: grey;
+@mntxtcolor: darkblue;
+@smmgn: 25px;
+@bigmgn: 50px;
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: black;
 }
 
+.container {
+	font-size: @ftmain;
+	background-color: thistle;
+	margin-left: @bigmgn;
+	margin-right: @bigmgn;
+	margin-bottom: @bigmgn;
+	
+	.head1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: @bigmgn;
+		margin-bottom: @bigmgn;
+
+		@media screen and (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: center;
+			
+			
+		}
+	
+	h1 {
+		width: 483px;
+		text-align: center; 
+		font-size: @fttitle;
+		color: @titcolor;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 330px;
+		margin-right: @bigmgn;
+		align-items: center;
+		font-size: 1.5rem;
+		color: @nvcolor;
+
+		@media screen and (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+	}
+	.intro {
+		border-top: 1px solid blue;
+		color: @titcolor;
+		padding-top: @bigmgn;
+	}
+	h3 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	p {
+		margin-top: @smmgn;
+		margin-bottom: @bigmgn;
+		margin-left: @smmgn;
+		margin-right: @smmgn;
+
+	}
+	.skillz {
+		.intro;
+		
+		.head1;
+		.sklst {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		h3 {
+			text-align: left;
+			font-size: @fttitle;
+			margin-left: 50px;
+		}
+		ul {
+			list-style-type: square;
+			font-size: 1.5rem;
+			margin-left: @bigmgn;
+			li {
+				margin-left: @smmgn;
+			}
+		}
+	
+		img {
+			width: 609px;
+			margin-right: @smmgn;
+		}
+
+	}
+	.experience {
+		.intro;
+		color: black;
+		width: 100%;
+		margin-bottom: @bigmgn;
+
+	}
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: @smmgn;
+	}
+	table {
+		width: 100%;
+		background-color: antiquewhite;
+	th {
+		border: 1px solid black;
+	}
+	td {
+		border: 1px solid black;
+	}
+	}
+	.finflex {
+		display: flex;
+		flex-direction: column;
+		
+		h3 {
+			text-align: left;
+			margin-left: @smmgn;
+		}
+		p{
+			margin-top: 0px;
+		}
+	}
+	.copyr {
+		text-align: center;
+	}
+}

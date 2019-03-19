@@ -1,1 +1,298 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+.container {
+  font-size: 1.25rem;
+  background-color: thistle;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.container .head1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 500px) {
+  .container .head1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.container .head1 h1 {
+  width: 483px;
+  text-align: center;
+  font-size: 2rem;
+  color: darkred;
+}
+.container .head1 nav {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  margin-right: 50px;
+  align-items: center;
+  font-size: 1.5rem;
+  color: grey;
+}
+@media screen and (max-width: 500px) {
+  .container .head1 nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .head1 nav a {
+  text-decoration: none;
+}
+.container .intro {
+  border-top: 1px solid blue;
+  color: darkred;
+  padding-top: 50px;
+}
+.container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.container p {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.container .skillz {
+  border-top: 1px solid blue;
+  color: darkred;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 500px) {
+  .container .skillz {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.container .skillz h1 {
+  width: 483px;
+  text-align: center;
+  font-size: 2rem;
+  color: darkred;
+}
+.container .skillz nav {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  margin-right: 50px;
+  align-items: center;
+  font-size: 1.5rem;
+  color: grey;
+}
+@media screen and (max-width: 500px) {
+  .container .skillz nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .skillz nav a {
+  text-decoration: none;
+}
+.container .skillz .sklst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .skillz h3 {
+  text-align: left;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+.container .skillz ul {
+  list-style-type: square;
+  font-size: 1.5rem;
+  margin-left: 50px;
+}
+.container .skillz ul li {
+  margin-left: 25px;
+}
+.container .skillz img {
+  width: 609px;
+  margin-right: 25px;
+}
+.container .experience {
+  border-top: 1px solid blue;
+  color: darkred;
+  padding-top: 50px;
+  color: black;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+.container table {
+  width: 100%;
+  background-color: antiquewhite;
+}
+.container table th {
+  border: 1px solid black;
+}
+.container table td {
+  border: 1px solid black;
+}
+.container .finflex {
+  display: flex;
+  flex-direction: column;
+}
+.container .finflex h3 {
+  text-align: left;
+  margin-left: 25px;
+}
+.container .finflex p {
+  margin-top: 0px;
+}
+.container .copyr {
+  text-align: center;
+}
